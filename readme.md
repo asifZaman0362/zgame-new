@@ -1,0 +1,6 @@
+# zgame
+**zgame** is a simple library that I am making to help me develop my games. The goal of this library is to provide a base for writing your own custom game engine by extending or modifying it to your own liking. It is ***not*** a game engine and doesn't provide all the features that would be available in a game engine. My goal with this library is to provide the minimum requirements for writing a game from scratch. It doesn't have its own renderer or any physics simulation. However, I aim to provide basic features like collision detection and a simple GUI system. Currently, it uses [**SFML**](https://sfml-dev.org)[(github)](https://github.com/SFML/SFML) as its renderer and windowing system, but that can be easily replaced with anything of your own choice.
+
+The library is designed to be easily modified and extended for implementing your own features. My goal is to keep it as modular as possible. If you would like to contribute to the code, you're very welcome. If you can't contribute but would still like to give me any suggestions, feel free to do so as well. I may be slow to respond as I don't work on this very actively but I appreciate any and all help.
+
+Cheers!
