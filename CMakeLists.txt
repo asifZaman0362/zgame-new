@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.1)
 
 include_directories(core/header utils)
 
-set(HEADERS core/header/logger.hpp core/header/engine.hpp utils/stringutils.hpp)
-set(SOURCE_FILES core/src/logger.cpp core/src/engine.cpp)
+set(HEADERS core/header/logger.hpp core/header/game.hpp utils/stringutils.hpp)
+set(SOURCE_FILES core/src/logger.cpp core/src/game.cpp)
 
 add_executable(zgame ${HEADERS} ${SOURCE_FILES})
