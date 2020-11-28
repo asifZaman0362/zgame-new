@@ -31,23 +31,23 @@ namespace tst::zg {
             return sstr.str();
         }
 
-        void LogError(const char* mssg) {
-            std::string line = FormatLine(1, mssg, time(0));
+        void LogError(std::string mssg) {
+            std::string line = FormatLine(1, mssg.c_str(), time(0));
             SET_COLOR(RED_B);
             std::cerr << line << std::endl;
             SET_COLOR(RESET);
             logs.push_back(line);
         }
 
-        void LogMssg(const char* mssg) {
-            std::string line = FormatLine(0, mssg, time(0));
+        void LogMssg(std::string mssg) {
+            std::string line = FormatLine(0, mssg.c_str(), time(0));
             SET_COLOR(GREEN_B);
             std::cout << line << std::endl;
             SET_COLOR(RESET);
             logs.push_back(line);
         }
         
-        void DumpLog(const char* path) {
+        void DumpLog(std::string path) {
             std::ofstream stream(path, std::ios::out);
             if (stream.is_open()) {
                 for (auto& i : logs) {

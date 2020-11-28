@@ -1,3 +1,5 @@
+#include <string>
+
 namespace tst::zg {
     namespace Logger {
 
@@ -17,8 +19,8 @@ namespace tst::zg {
         #define WHITE_B     "\x1B[97m"
         #define RESET       "\033[0m"
 
-        void LogError(const char*);
-        void LogMssg(const char*);
-        void DumpLog(const char* path);
+        void LogError(std::string);
+        void LogMssg(std::string);
+        void DumpLog(std::string);
     }
 }
