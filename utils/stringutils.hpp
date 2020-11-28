@@ -12,8 +12,14 @@ namespace tst::zg::utils {
         
         using std::vector, std::string, std::stringstream;
         
-        string format(const char* p_format, ...) {
-
+        string format(std::string p_format, ...) {
+            va_list args;
+            va_start(args, p_format);
+            char ftext[100];
+            vsprintf(ftext, p_format.c_str(), args);
+            string fstr(ftext);
+            va_end(args);
+            return fstr;
         }
 
         string join(vector<string> list, const char* seperator="") {
