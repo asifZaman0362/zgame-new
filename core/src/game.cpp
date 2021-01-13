@@ -1,9 +1,14 @@
 #include "game.hpp"
 
-int main() {
-    using namespace tst::zg;
-    
-    
+namespace tst::zg {
+    Game::Game(Settings settings) {
+        m_window.create(settings);
+    }
 
-    return 0;
+    void Game::Start() {
+        // main loop
+        while (m_window.isOpen()) {
+            
+        }
+    }
 }
